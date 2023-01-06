@@ -1,0 +1,4 @@
+# TypeScript TTS-Bot
+
+## Setup
+
