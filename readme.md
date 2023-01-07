@@ -73,4 +73,5 @@ Join a voice channel and make the bot join and enjoy.
     ```
 
 10. Registering slash commands
+    
     to register slash commands add the following key to the .env file `UPDATE_COMMANDS` it's value doesn't matter
