@@ -1,7 +1,7 @@
 import { Collection, SlashCommandBuilder } from "discord.js";
+import { MutableObject } from "sussy-util";
 import Command from "../types/Command";
 import fs from "node:fs";
-import { MutableObject } from "sussy-util";
 
 export default (commands: Collection<string, Command>) => {
 

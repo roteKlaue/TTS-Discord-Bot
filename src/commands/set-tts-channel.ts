@@ -1,7 +1,7 @@
 import { CacheType, Client, CommandInteraction, PermissionsBitField } from "discord.js";
 import guildData from "../functions/guildData";
-import { guild } from "../models";
 import Command from "../types/Command";
+import { guild } from "../models";
 
 export default {
     name: "set-tts-channel",

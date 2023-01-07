@@ -1,26 +1,12 @@
-import { CacheType, Client, Collection, EmbedBuilder, Interaction } from "discord.js";
-import Command from "../types/Command";
+import { CacheType, Client, Interaction } from "discord.js";
+import { command as commands, selectMenus } from "..";
 
-export default async (client: Client<boolean>, commands: Collection<string, Command>, interaction: Interaction<CacheType>) => {
+export default async (client: Client<boolean>, interaction: Interaction<CacheType>) => {
     if (interaction.isStringSelectMenu()) {
-        const commandName = interaction.values[0];
-
-        const cmd = commands.get(commandName);
-
-        if (!cmd) return interaction.update("No command found for: `" + commandName + "`");
-
-        const embed = new EmbedBuilder()
-            .setTimestamp(Date.now())
-            .setTitle('Help panel')
-            .setFooter({ text: client.user?.username || "", iconURL: client.user?.displayAvatarURL() })
-            .setDescription(`\`[]\` are optional parameters.\n\`{}\` are required parameters.`)
-            .addFields(
-                { name: 'Name', value: cmd.name, inline: true },
-                { name: 'Description', value: cmd.description, inline: true },
-                { name: 'Usage', value: cmd.options?.length ? `/${cmd.name} ${cmd.options?.map(e => (e.required ? "{" : "[") + e.name + (e.required ? "}" : "]")).join(" ")}` : "/" + cmd.name, inline: true },
-            );
-
-        interaction.update({ embeds: [embed], components: [] });
+        const menuName = interaction.customId;
+        const menu = selectMenus.get(menuName);
+        if (!menu) return;
+        menu(client, interaction);
     }
 
     if (!interaction.isCommand()) return;

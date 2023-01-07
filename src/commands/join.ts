@@ -1,8 +1,8 @@
+import { createAudioPlayer, joinVoiceChannel, NoSubscriberBehavior } from "@discordjs/voice";
 import { CacheType, Client, CommandInteraction, Guild, GuildMember } from "discord.js";
+import { ImprovedArray } from "sussy-util";
 import Command from "../types/Command";
 import { guildStates } from "..";
-import { createAudioPlayer, joinVoiceChannel, NoSubscriberBehavior } from "@discordjs/voice";
-import { ImprovedArray } from "sussy-util";
 
 export default {
     name: "join",
