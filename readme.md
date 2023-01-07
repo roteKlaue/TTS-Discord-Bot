@@ -33,10 +33,16 @@ Join a voice channel and make the bot join and enjoy.
     git clone https://github.com/roteKlaue/TTS-Discord-Bot
     ```
 
-2. Downloading NPM packages
+2. Downloading NPM | Yarn packages
 
-    ```bach
+    npm: 
+    ```bash
     npm i
+    ```
+
+    yarn:
+    ```bash
+    yarn install
     ```
 
 3. compiling the code
