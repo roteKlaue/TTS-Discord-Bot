@@ -20,9 +20,9 @@ Join a voice channel and make the bot join and enjoy.
 ## Requirements
 
 * nodejs
-* npm package manager
+* npm package manager | yarn package manager
 * git
-* TypeScript
+* TypeScript compiler
 * [MongoDB database](./doc/MONGODB.md)
 
 ## Setup
