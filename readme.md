@@ -1,5 +1,19 @@
 # TypeScript TTS-Bot
 
+Did you ever want to annoy your friends with Text to Speech.
+With this bot you can do it.
+
+Create a new channel for the Text to Speech and set it up for the bot.
+Join a voice channel and make the bot join and enjoy.
+
+### List of commands
+
+ * help - lists all commands | shows more information about the commands
+ * inviteme - sends an invite link for the bot as a reply
+ * join - makes the bot join your voice channel
+ * leave - makes the bot leave the voice channel
+ * set-tts-channel - sets the channel for the text to speech
+
 ## Requirements
 
 * nodejs
@@ -12,30 +26,29 @@
 
 1. Cloning the repository
 
-```bash
-git clone https://github.com/roteKlaue/TTS-Discord-Bot
-```
+    ```bash
+    git clone https://github.com/roteKlaue/TTS-Discord-Bot
+    ```
 
 2. Downloading NPM packages
 
-```bach
-npm i
-```
+    ```bach
+    npm i
+    ```
 
 3. compiling the code
 
-```bash
-tsc
-```
+    ```bash
+    tsc
+    ```
 
 4. Creating a .env file
+    create a .env file in the root directory of the project and add the following lines:
 
-create a .env file in the root directory of the project and add the following lines:
-
-```env
-TOKEN =
-MONGO =
-```
+    ```env
+    TOKEN =
+    MONGO =
+    ```
 
 5. Creating a Discord Bot
 
@@ -58,3 +71,6 @@ MONGO =
     ```bash
     node .
     ```
+
+10. Registering slash commands
+    to register slash commands add the following key to the .env file `UPDATE_COMMANDS` it's value doesn't matter
