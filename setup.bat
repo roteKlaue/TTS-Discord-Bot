@@ -2,9 +2,9 @@
 title Setup
 
 start npm install
-Timeout /T 5 /Nobreak
-start npm i typescript
-Timeout /T 5 /Nobreak
+Timeout /T 50 /Nobreak
+start npm i -g typescript
+Timeout /T 10 /Nobreak
 start tsc
 
 echo TOKEN = >> .\.env
