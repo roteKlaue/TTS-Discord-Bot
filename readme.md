@@ -8,14 +8,14 @@ Join a voice channel and make the bot join and enjoy.
 
 ### List of commands
 
- * help - lists all commands | shows more information about the commands
- * inviteme - sends an invite link for the bot as a reply
- * join - makes the bot join your voice channel
- * leave - makes the bot leave the voice channel
- * ping - shows you the latency of the bot
- * set-language - sets the language for text to speech for the current user
- * set-tts-channel - sets the channel for the text to speech
- * uptime - shows the current uptime of the bot
+ * `help` - lists all commands | shows more information about the commands
+ * `inviteme` - sends an invite link for the bot as a reply
+ * `join` - makes the bot join your voice channel
+ * `leave` - makes the bot leave the voice channel
+ * `ping` - shows you the latency of the bot
+ * `set-language` - sets the language for text to speech for the current user
+ * `set-tts-channel` - sets the channel for the text to speech
+ * `uptime` - shows the current uptime of the bot
 
 ## Requirements
 
